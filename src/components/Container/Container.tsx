@@ -9,7 +9,6 @@ import Comment from './Comment';
 import sort from 'fast-sort';
 import { creatSmartEqualSelector } from 'selectors';
 
-
 const memoSwitch = true;
 const commentsByIdSelector = createSelector(
   (state: any) => state.comments,

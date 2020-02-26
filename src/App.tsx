@@ -4,7 +4,7 @@ import Root from 'components/Root';
 import Nav from 'components/Nav';
 import {Container} from 'components/Container';
 import {High} from 'components/HOC';
-
+import RenderProps from './components/RenderProps/Main';
 
 const App = () => 
     <Router>
@@ -14,7 +14,7 @@ const App = () =>
         <Route path='/' exact component={Root}/>
         <Route path='/container' exact component={Container}/>
         <Route path='/hoc' exact component={High}/> 
-        {/* <Route path='/renderprops' exact component={Root}/> */}
+        <Route path='/renderprops' exact component={RenderProps}/>
       </Switch>
       </div>
     </Router>
