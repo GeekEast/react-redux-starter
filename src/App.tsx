@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Nav from 'components/Nav';
-import {Container} from 'components/CompositeContainer';
-import {High} from 'components/HOC';
-import RenderProps from './components/RenderProps/Main';
-import SimpleContainer from './components/SimpleContainer/Main';
-import Hooks from './components/Hooks/Main';
+import Nav from 'patterns/Nav';
+import {Container} from 'patterns/CompositeContainer';
+import {High} from 'patterns/HOC';
+import RenderProps from 'patterns/RenderProps/Main';
+import SimpleContainer from 'patterns/SimpleContainer/Main';
+import Hooks from 'patterns/Hooks/Main';
 const App = () => 
     <Router>
       <Nav />
