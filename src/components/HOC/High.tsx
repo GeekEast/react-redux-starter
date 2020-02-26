@@ -9,10 +9,10 @@ const High = () => {
   const history = useHistory();
   const dispatch = useDispatch()
   useEffect(() => { dispatch(getComments()) }, [dispatch])
-  if (redirect) return <Redirect to='/container'/>
+  if (redirect) return <Redirect to='/compositecontainer'/>
   return (
     <>
-    <button onClick={() => {history.push('/container')}}>Push Container Patterns</button>
+    <button onClick={() => {history.push('/compositecontainer')}}>Push Container Patterns</button>
     <button onClick={() => setRedirect(true)}>Redirect Container Patterns</button>
     <Comment id={1}></Comment>
     </>
